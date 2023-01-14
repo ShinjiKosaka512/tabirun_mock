@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTB旅できルンです</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <script src="/js/functions.js"></script>
+
+    <script language="javascript" type="text/javascript">
+
+        window.onload = onLoad;
+
+        function onLoad() {
+            displayCookies();
+        }
+    </script>
+
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../img/logo.jpg" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-bold" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-2">
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="current_cookie"></div>
+
+    <!-- CTA -->
+    <section class="bg-primary py-5 text-white">
+        <div class="container overflow-hidden">
+            <div class="row text-center">
+                <div class="col">
+                    <h1>ご希望のエリアをタッチしてください</h1>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Hokkaido();" class="btn btn-lg btn-outline-light">北海道エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Touhoku();" class="btn btn-lg btn-outline-light">東北エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Hokuriku();" class="btn btn-lg btn-outline-light">北陸エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Kanto();" class="btn btn-lg btn-outline-light">関東エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Chubu();" class="btn btn-lg btn-outline-light">中部エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Kinki();" class="btn btn-lg btn-outline-light">近畿エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Chugoku();" class="btn btn-lg btn-outline-light">中国エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Shikoku();" class="btn btn-lg btn-outline-light">四国エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Kyushu();" class="btn btn-lg btn-outline-light">九州エリア</a></p>
+                    <p class="lead py-3"><a href="/pages/select7_areadetail.html" onclick="OnClickSelect6Okinawa();" class="btn btn-lg btn-outline-light">沖縄エリア</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3 bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="#" class="text-decoration-none text-light">&copy;
+                        Powerd by JTB</a></div>
+                <div class="col text-end"><a href="#" class="text-decoration-none text-light"><i
+                            class="bi bi-chevron-up"></i> Back to top</a></div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 3000,
+        once: true,
+    });
+</script> 
+</body>
+</html>

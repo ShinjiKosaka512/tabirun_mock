@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTB旅できルンです</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <script src="/js/functions.js"></script>
+
+    <script language="javascript" type="text/javascript">
+
+        window.onload = onLoad;
+
+        function onLoad() {
+            displayCookies();
+
+            displayAreaName();
+        }
+
+        function displayAreaName()
+        {
+            var elemAreaName = document.getElementById("area_name");
+            var areaName = "";
+
+            var arr = getCookieArray();
+
+            switch (arr["area"])
+            {
+                case 'hokkaido':
+                    areaName = "北海道エリア";
+                    break;
+
+                case 'tohoku':
+                    areaName = "東北エリア";
+                    break;
+
+                case 'hokuriku':
+                    areaName = "北陸エリア";
+                    break;
+
+                case 'kanto':
+                    areaName = "関東エリア";
+                    break;
+
+                case 'chubu':
+                    areaName = "中部エリア";
+                    break;
+
+                case 'kinki':
+                    areaName = "近畿エリア";
+                    break;
+
+                case 'chugoku':
+                    areaName = "中国エリア";
+                    break;
+
+                case 'shikoku':
+                    areaName = "四国エリア";
+                    break;
+
+                case 'kyushu':
+                    areaName = "九州エリア";
+                    break;
+
+                case 'okinawa':
+                    areaName = "沖縄エリア";
+                    break;
+            }
+
+            elemAreaName.innerHTML = areaName;
+        }
+    </script>
+
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../img/logo.jpg" height="30"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-bold" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-2">
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="current_cookie"></div>
+
+    
+
+    <!-- CTA -->
+    <section class="bg-primary py-5 text-white">
+        <div class="container overflow-hidden">
+            <div class="row text-center">
+                <div class="col">
+                    <h1><div id="area_name"></div></h1>
+                    <h1>希望の都道府県名をタッチしてください</h1>
+                
+                    
+                    <p class="lead py-3"><a href="/pages/search_start.html" onclick="OnClickSelect7();" class="btn btn-lg btn-outline-light">エリア全体から</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-3 bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col"><a href="#" class="text-decoration-none text-light">&copy;
+                        Powerd by JTB</a></div>
+                <div class="col text-end"><a href="#" class="text-decoration-none text-light"><i
+                            class="bi bi-chevron-up"></i> Back to top</a></div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 3000,
+        once: true,
+    });
+</script> 
+</body>
+</html>
